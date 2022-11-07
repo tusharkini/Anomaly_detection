@@ -1,11 +1,11 @@
-# CSC591GraphP2
-> This project implementation is done towards fullfillment of Project 4 Anomaly Detection in Time Detection of CSC 591 Graph Data Mining.
+# CSC591GraphP4
+> This project implementation is done towards fulfillment of Project 4 Anomaly Detection in Time Detection of CSC 591 Graph Data Mining.
 
-## Reaserch Paper
+## Research Paper
 The paper implemented is given under `research_paper` folder. The paper is [DELTACON: A Principled Massive-Graph Similarity Function](https://arxiv.org/abs/1304.4657)
 
 ## Goal
-To implement the given community detection algorithm for realworld graphs. Objective is stated [here](https://github.com/tusharkini/CSC591GraphP2/blob/main/objective/P1CommunityDetection.pdf). To do that, you will need to:
+To implement the given community detection algorithm for real world graphs. Objective is stated [here](https://github.com/tusharkini/CSC591GraphP2/blob/main/objective/P1CommunityDetection.pdf). To do that, you will need to:
 -  Read and understand the scientific publication assigned to you. If your publication has other emphases besides anomalous time point detection, then your implementation should focus only on the anomalous time point detection part.
 - Implement the algorithm described in the publication using either R or Python. Your code must contain detailed comments and a README file that specifies any software that needs to be installed (using python’s pip or or R’s install.packages ). Your main file should be called anomaly.py or anomaly.R and should take one argument, the data directory, as input. Make sure your code includes detailed comments.
 - Have your code output a time series of your algorithms output to the file time_series.txt . If your paper uses a similarity score then output the similarity value time series. If it uses a distance metric then output the distance value time series. Let each line represent a single time step (i.e., one number per line).
@@ -16,8 +16,7 @@ To implement the given community detection algorithm for realworld graphs. Objec
 ## Datasets
 
 A collection of time evolving graph data has been provided to you. This data was primarily taken
-from the Stanford Large Network Dataset Collection. There are four timeevolving
-graph from different domains. For example, the `enron_by_time` graph represents an email network and the `p2p-Gnutella`
+from the Stanford Large Network Dataset Collection. There are four time evolving graph from different domains. For example, the `enron_by_time` graph represents an email network and the `p2p-Gnutella`
 graph represent a peer to peer network. Each time evolving graph is represented
 as a series of text files which define the graph at a given time point. Each text file is given as an
 edge list but with the first line stating the number of nodes and edges.
@@ -35,7 +34,7 @@ The 4 datasets are-
 ### Installation
 
 - Install Python3 from [here](https://www.python.org/downloads/) and finish the required setup in the executable file.
-- Install pip package manager fo rfuture downloads-
+- Install pip package manager for future downloads-
     ```bash
     $ python -m ensurepip --upgrade
     ```
@@ -81,7 +80,7 @@ The 4 datasets are-
     It will also create a plot named `results/enron_by_day_time_series.png` for all these similarity values and the lower and upper threshold.
 
 ### Note on running time
-Depending on the size of the dataset and the size of each graph screenshot in the dataset, the program may take quite some time to execute. All graphs except the `p2p-Gnutella` and the `autonomous` graph take a very small time (~10 seconds) to execute.  The `autonomous ` graph takes about 5 minutes to run and the `p2p-Gnutella` takes the highest running time(~ 60 minutes).
+Depending on the size of the dataset and the size of each graph screenshot in the dataset, the program may take quite some time to execute. All graphs except the `p2p-Gnutella` and the `autonomous` graph take a very small time (about 10 seconds) to execute.  The `autonomous ` graph takes about 5 minutes to run and the `p2p-Gnutella` takes the highest running time(about 60 minutes).
 
 
 
